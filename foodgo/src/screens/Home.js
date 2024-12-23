@@ -11,7 +11,7 @@ function Home() {
 
   const loadData = async () => {
     try {
-      let response = await fetch("http://localhost:5000/api/fooddata", {
+      let response = await fetch("https://foodgo-backend-r06p.onrender.com", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
