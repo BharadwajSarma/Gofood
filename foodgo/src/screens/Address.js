@@ -16,7 +16,7 @@ function Address() {
         }
 
         try {
-            const response = await axios.post("http://localhost:5000/api/address", {
+            const response = await axios.post("https://foodgo-backend-r06p.onrender.com", {
                 Address: addr.Address,
                 street: addr.street,
                 town: addr.town,
