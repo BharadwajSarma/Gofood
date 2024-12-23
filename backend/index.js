@@ -1,9 +1,11 @@
 const express =require('express')
-const cors=require('cors')
-const app =express();
+
+const cors = require('cors');
+app.use(cors({ origin: 'https://your-frontend-domain.onrender.com' }));
+
 const port = process.env.PORT||5000
 app.use(express.json());
-app.use(cors());
+
 const mongoDB =require("./db")
 mongoDB();
 app.get('/',(req,res)=>{
