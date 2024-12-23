@@ -1,5 +1,5 @@
 const express =require('express')
-
+const app =express();
 const cors = require('cors');
 app.use(cors({ origin: 'https://your-frontend-domain.onrender.com' }));
 
