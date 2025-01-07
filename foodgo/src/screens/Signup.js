@@ -15,7 +15,7 @@ function Signup() {
         }
 
         try {
-            const response = await axios.post("http://localhost:5000/api/createuser", {
+            const response = await axios.post("https://food-g-bharadwajsarmas-projects.vercel.app/api/createuser", {
                 name: crede.name,
                 email: crede.email,
                 password: crede.password,

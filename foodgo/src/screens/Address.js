@@ -16,7 +16,7 @@ function Address() {
         }
 
         try {
-            const response = await axios.post("http://localhost:5000/api/address", {
+            const response = await axios.post("https://food-g-bharadwajsarmas-projects.vercel.app/api/address", {
                 Address: addr.Address,
                 street: addr.street,
                 town: addr.town,

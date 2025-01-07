@@ -13,7 +13,7 @@ export default function MyOrder() {
         const userEmail = localStorage.getItem('userEmail'); // Retrieve email from localStorage
 
         try {
-            const response = await fetch("http://localhost:5000/api/auth/myOrderData", {
+            const response = await fetch("https://food-g-bharadwajsarmas-projects.vercel.app/api/auth/myOrderData", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

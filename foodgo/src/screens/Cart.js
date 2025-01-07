@@ -26,7 +26,7 @@ function Carts() {
     const handleCheckOut = async () => {
         try {
             // Post order data to backend
-            const response = await axios.post("http://localhost:5000/api/auth/orderData", {
+            const response = await axios.post("https://food-g-bharadwajsarmas-projects.vercel.app/api/auth/orderData", {
                 order_data: {
                     items: data,
                     total: data.reduce((total, food) => total + food.price * food.qty, 0),
@@ -55,7 +55,7 @@ function Carts() {
         const body={
             products:data
         }
-        const response=await fetch("http://localhost:5000/payment",{
+        const response=await fetch("https://food-g-bharadwajsarmas-projects.vercel.app/payment",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(body)
