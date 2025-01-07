@@ -17,7 +17,11 @@ function Login() {
         }
 
         try {
+<<<<<<< HEAD
             const response = await axios.post("https://food-g-bharadwajsarmas-projects.vercel.app/api/login", {
+=======
+            const response = await axios.post("https://foodgo-backend-r06p.onrender.com", {
+>>>>>>> cf9044e8bb385dc6432400bab3e048baab741bb8
                 email: crede.email,
                 password: crede.password
             });

@@ -11,7 +11,11 @@ function Home() {
 
   const loadData = async () => {
     try {
+<<<<<<< HEAD
       let response = await fetch("https://food-g-bharadwajsarmas-projects.vercel.app/api/fooddata", {
+=======
+      let response = await fetch("https://foodgo-backend-r06p.onrender.com", {
+>>>>>>> cf9044e8bb385dc6432400bab3e048baab741bb8
         method: "POST",
         headers: {
           "Content-Type": "application/json",
