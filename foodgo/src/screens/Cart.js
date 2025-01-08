@@ -26,11 +26,9 @@ function Carts() {
     const handleCheckOut = async () => {
         try {
             // Post order data to backend
-<<<<<<< HEAD
-            const response = await axios.post("https://food-g-bharadwajsarmas-projects.vercel.app/api/auth/orderData", {
-=======
-            const response = await axios.post("https://foodgo-backend-r06p.onrender.com", {
->>>>>>> cf9044e8bb385dc6432400bab3e048baab741bb8
+
+            const response = await axios.post("https://backend-one-phi-22.vercel.app/api/auth/orderData", {
+
                 order_data: {
                     items: data,
                     total: data.reduce((total, food) => total + food.price * food.qty, 0),
@@ -59,11 +57,8 @@ function Carts() {
         const body={
             products:data
         }
-<<<<<<< HEAD
-        const response=await fetch("https://food-g-bharadwajsarmas-projects.vercel.app/payment",{
-=======
-        const response=await fetch("https://foodgo-backend-r06p.onrender.com",{
->>>>>>> cf9044e8bb385dc6432400bab3e048baab741bb8
+
+        const response=await fetch("https://backend-one-phi-22.vercel.app/payment",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(body)
