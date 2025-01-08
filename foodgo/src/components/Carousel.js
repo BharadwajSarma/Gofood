@@ -18,7 +18,7 @@ function Carousel() {
                         <img src="images/french.jpg" className="d-block w-100" alt="..." />
                     </div>
                     <div className="carousel-item">
-                        <img src="images/gobi.jpeg" className="d-block w-100" alt="..." />
+                        <img src="images/burr.jpg" className="d-block w-100" alt="..." />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">

@@ -27,7 +27,7 @@ function Carts() {
         try {
             // Post order data to backend
 
-            const response = await axios.post("https://backend-one-phi-22.vercel.app/api/auth/orderData", {
+            const response = await axios.post("http://localhost:5000/api/auth/orderData", {
 
                 order_data: {
                     items: data,
@@ -58,7 +58,7 @@ function Carts() {
             products:data
         }
 
-        const response=await fetch("https://backend-one-phi-22.vercel.app/payment",{
+        const response=await fetch("http://localhost:5000/payment",{
             method:"POST",
             headers:{"Content-Type":"application/json"},
             body:JSON.stringify(body)

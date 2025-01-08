@@ -12,7 +12,7 @@ function Home() {
   const loadData = async () => {
     try {
 
-      let response = await fetch("https://backend-one-phi-22.vercel.app/api/fooddata", {
+      let response = await fetch("http://localhost:5000/api/fooddata", {
 
         method: "POST",
         headers: {

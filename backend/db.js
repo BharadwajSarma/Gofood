@@ -20,8 +20,8 @@ const mongoDB = async () => {
         ]);
 
         // Log fetched data
-       // console.log("Fetched Food Items:", foodItems);
-        //console.log("Fetched Food Categories:", foodCategories);
+       console.log("Fetched Food Items:", foodItems);
+        console.log("Fetched Food Categories:", foodCategories);
 
         // Assign to global variables
         global.food_items = foodItems;

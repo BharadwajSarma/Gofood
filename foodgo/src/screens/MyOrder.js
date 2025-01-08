@@ -14,7 +14,7 @@ export default function MyOrder() {
 
         try {
 
-            const response = await fetch("https://backend-one-phi-22.vercel.app/api/auth/myOrderData", {
+            const response = await fetch("http://localhost:5000/api/auth/myOrderData", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
